@@ -2,6 +2,9 @@
 
 namespace Database\Seeders;
 
+use App\Models\Family;
+use App\Models\Member;
+use App\Models\Photo;
 use App\Models\User;
 // use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
@@ -19,5 +22,18 @@ class DatabaseSeeder extends Seeder
         //     'name' => 'Test User',
         //     'email' => 'test@example.com',
         // ]);
+        User::factory(10)->create();
+
+        // User::factory()->create(
+        //     [
+        //         'name' => 'Test User',
+        //         'email' => 'test@example.com',
+        //         'username'=>'test',
+        //         'password' => bcrypt('password'),
+        //     ]
+        // );
+        Family::factory(10)->create(); 
+        Member::factory(10)->create();
+        Photo::factory(10)->create(); 
     }
 }
