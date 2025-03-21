@@ -1,6 +1,9 @@
 <?php
 
 namespace Database\Factories;
+use App\Models\Member;
+use App\Models\User;
+use App\Models\Family;
 
 use Illuminate\Database\Eloquent\Factories\Factory;
 
