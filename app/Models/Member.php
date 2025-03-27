@@ -10,4 +10,5 @@ class Member extends Model
 use HasFactory;
 
 protected $fillable = ['role', 'family_id', 'user_id'];
+    /** @use HasFactory<\Database\Factories\MembershipFactory> */
 }
