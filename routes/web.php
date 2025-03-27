@@ -25,3 +25,7 @@ Route::middleware('auth')->group(function () {
 });
 
 require __DIR__.'/auth.php';
+
+Route::get('/page', function () {
+    return Inertia::render('Page'); // This loads the Vue component
+})->name('page');
